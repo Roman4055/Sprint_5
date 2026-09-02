@@ -36,3 +36,8 @@ def test_user_credentials_fixed_email():
     password = "123456"
     return name, login, password
 
+@pytest.fixture(scope="session")
+def base_url():
+    # Можно переопределить через env-переменную, если нужно
+    import os
+    return os.getenv("BASE_URL", "https://stellarburgers.education-services.ru/")
