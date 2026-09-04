@@ -1,6 +1,6 @@
 from selenium.webdriver.support import expected_conditions as EC
-from tests.locators import PageLocators 
-from tests.helpers import login_account
+from locators import PageLocators 
+from helpers import login_account
 
 class TestsNavigation:
 

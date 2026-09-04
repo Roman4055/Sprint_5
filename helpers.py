@@ -1,5 +1,5 @@
 from selenium.webdriver.support import expected_conditions as EC
-from tests.locators import PageLocators
+from locators import PageLocators
 from selenium.webdriver.common.by import By
 
 # Вход через кнопку «Войти в аккаунт» на главной странице.
@@ -30,8 +30,8 @@ def is_tab_active(wait, locator):
     el = wait.until(EC.presence_of_element_located(locator))
     return "tab_tab_type_current__" in el.get_attribute("class")
 
+# Проверяет, виден ли элемент (есть в DOM и отображается).
 def is_heading_visible(driver, locator):
-    """Проверяет, виден ли элемент (есть в DOM и отображается)."""
     elements = driver.find_elements(*locator)
     if not elements:
         return False

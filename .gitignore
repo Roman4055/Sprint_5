@@ -1,1 +1,26 @@
-# Секреты и переменные окружения
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Виртуальные окружения
+venv/
+env/
+.venv/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Тесты и кэш pytest
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Прочее
+.DS_Store
+Thumbs.db

@@ -1,6 +1,6 @@
 from selenium.webdriver.support import expected_conditions as EC
-from tests.locators import PageLocators 
-from tests.helpers import open_login_form
+from locators import PageLocators 
+from helpers import open_login_form
 
 class TestLoginLogout:
 
